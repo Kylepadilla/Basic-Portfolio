@@ -1,39 +1,51 @@
-# This is my first homework using html and css to create a basic website
+<!-- # This is my first homework using html and css to create a basic website -->
 
 
-## This is the Homepage of my website
+<!-- ## This is the Homepage of my website -->
 
 <!DOCTYPE html>
-<html>
+<html lang='eng'>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
-    <script src="main.js"></script>
+    <title>Basic Portfolio| index</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css">
 </head>
 
-# This is the header with three links
-
-<header id="header">
-    <h1><b>Kyle Padilla</b></h1>
-    <div>
-        <ol>
-            <li><a href="#">About Me</a></li>
-            <li><a href="/portfolio.html">Portfolio</href> </li>
-            <li><a href="/contact.html">Contact</a></li>
-        </ol>
-    </div>
-</header>
-
-#  creates the about me paragraph 
+<!-- # This is the header with three links -->
 <body>
-    <H1>About Me</H1>
-    <div>
-        <p>  ???????????? </p>
+    <header>
+        <div class="wrapper">
+        <h1><b>Kyle Padilla</b> </h1>
+            <nav>
+                <ul>
+                    <li><a href="/index.html">About Me</a></li>
+                    <li><a href="/portfolio.html">Portfolio</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+   <!-- #  creates the about me paragraph  -->
+    <div class="wrapper">
+        <section class="about-me">
+            <h2>About Me</h2>
+
+            <!-- here I am sourcing my image -->
+
+            <img src="assets/images/mepic.jpg" alt="me">
+
+            <div>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore iusto incidunt natus impedit provident eum. Nobis assumenda, impedit esse cum ducimus perspiciatis. Tempore nesciunt asperiores reiciendis temporibus molestias ratione doloribus. </p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos facere repudiandae cupiditate perspiciatis quis, non explicabo laborum vel ut ex possimus? Fugiat quidem reiciendis dolore, perspiciatis totam accusamus minima placeat.</p>
+            </div>
+        </section>
     </div>
-
+    <footer>
+    <div class="Footer">
+        <figure>Copyright &copy  </figure>
+    </div>
+    </footer>
 </body>
-
 </html>
