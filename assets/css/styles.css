@@ -2,27 +2,27 @@
 
 *{box-sizing: border-box}
 
-.wrapper{
-    width:960px;
-    margin:0 auto;
-}
-
 body{
-    background-image: url('../images/nice-background.jpg');
+    background-image: url('../images/wheat.png');
     font-family: Arial, Helvetica, sans-serif;
     color: #777777;
+    overflow: auto;
 }
 
-h1,h2,{
-    font-family: Arial;}
+h1,h2,h3{
+    font-family: 'Georgia', Times, serif;
+}
 
 h1{
     font-size: 30px;
 }
 
+h3{
+    color:white;
+}
 header{
-    background:white;
-    border-bottom: 3px solid #ccc;
+    background: #ffffff;
+    border-bottom: 3px solid #cccccc;
     margin-bottom: 30px;
 }
 
@@ -36,25 +36,158 @@ header h1{
 
 /* ##below refrences the index html  */
 
-/* ##not sure what im doing here but cant seem to get them inline */
-nav{
+
+.nav{
     width: 300px;
     float: right;
-    margin-top: 35px;
+    margin-top: 15px;
     text-align: center;
-    border-right: 20px black;
-    border-right-color: black;
-    text-decoration: none;
+    padding: 20px 0px;
 }
-nav ul{
-    display: inline-block;
+nav ul li{
+    display: inline;
 }
 
-nav ul li:last-child {
+nav a{
+    color: #333333;
+    font-size: 18px;
+    padding: 15px 15px;
+    border-right: 2px solid #4aaaa5;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+
+nav ul li:last-child a{
     border-right: none;
     padding-right: none;
 }
 
-h2{
-    font-size: 20px
+.paragraph{
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.wrapper{
+    width:960px;
+    margin:0 auto;
+}
+
+.inline-img{
+    float: left;
+    margin: 0 15px 0;
+    border: 1px solid #777777;
+}
+.main{
+    background: white;
+    padding-top: 15px;
+    padding-right: 0px;
+    border: 2px solid #dddddd;
+    margin-top:35px;
+    width: 900px;
+    float: left;
+}
+
+#title{
+    font-size: 24px;
+    color: #4aaaa5;
+    padding: 20px 0 20px 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #dddddd;
+}
+
+
+/* below you will find styling for the contact me input boxes */
+label{
+    font-size: 18px;
+    display: block;
+}
+
+input, textarea {
+    width: 100%;
+    display: block;
+    margin: 5px 0 20px 0;
+    border: 2px solid #cccccc;
+    padding: 10px;
+    font-size: 16px;
+}
+
+textarea{
+    height: 300px;
+}
+
+button{
+    background-color: #4aaaa5;
+    color: #ffff;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 10px;
+}
+
+/* below you will find the styling for the list of games in my porfolio */
+
+.portfolio-link{
+    position: relative;
+    margin-bottom: 20px;
+    width: 45%;
+    float: left;
+    padding: 100px;
+    font-weight: bold;
+}
+
+.portfolio-link h3{
+    background: #4aaaa5;
+    padding:15px;
+    
+}
+#game1{
+    background-image: url('../images/Game1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#game2{
+    background-image: url('../images/Game2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: right
+}
+#game3{
+    background-image: url('../images/Game3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#game4{
+    background-image: url('../images/Game4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: right;
+}
+
+#game5{
+    background-image: url('../images/Game5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#game6{
+    background-image: url('../images/Game6.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: right;
+}
+
+/* below is the footer */
+footer{
+    display: block;
+    clear: both;
+    margin-top: 15px;
+    padding: 20px;
+    background: #666666;
+    margin-top: 15px;
+    text-align: center;
+    padding: 15px;
+    color: white;
 }

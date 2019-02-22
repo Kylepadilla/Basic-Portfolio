@@ -1,10 +1,12 @@
-<!-- # This is my first homework using html and css to create a basic website -->
 
+
+
+<!-- ## This is the Homepage of my website -->
 
 <!DOCTYPE html>
 <html lang='eng'>
 <head>
-    <title>Basic Portfolio|Contact</title>
+    <title>Basic Portfolio| Contact</title>
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/styles.css">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css">
 </head>
@@ -13,36 +15,44 @@
 <body>
     <header>
         <div class="wrapper">
-        <h1><b>Kyle Padilla</b></h1>
-            <nav id="nav">
-                <Ul id="nav-ul">
+        <h1><b>Kyle Padilla</b> </h1>
+          <!-- <div class="topnav"> -->
+            <nav class="nav">
+                <ul>
                     <li><a href="/index.html">About Me</a></li>
                     <li><a href="/portfolio.html">Portfolio</a></li>
                     <li><a href="/contact.html">Contact</a></li>
-                </Ul>
+                </ul>
             </nav>
-          </h1>
+          <!-- </div> -->
         </div>
     </header>
 
-# Here i am creating the input boxes for contact me
+   <!-- #  creates the about me paragraph  -->
     <div class="wrapper">
-      <H1>Contact me</H1>
-        <section class="contact">
-            <div>
-                <h2>Name</h2>
-                <h2>Email</h2>
-                <h2>Message</h2>
+        <div class="main">
+            <h2 id="title">Contact Me</h2>
+
+            <form>
+                <label for="name">Name</label>
+                <input type="text" name= "Name" id="form-name" placeholder="Enter Name">
+
+                <label for="email">Email</label>
+                <input type="text" name= "Email" id="form-email" placeholder="Enter email">
+
+                <label for="message">Message</label>
+                <textarea type="Messaage" name= "Message" id="Form-message" cols="30" rows="18" ></textarea>
+
+                <button type="submit"> Submit <Form></Form></button>
+            </form>
             </div>
-        </section>
-    </div>    
-
-</body>
-
-<footer>
-        <div>
-            Copyright &copy;
         </div>
+    </div>
+
+    <footer>
+    <div class="footer">
+        <figure>Copyright &copy  </figure>
+    </div>
     </footer>
-    
+</body>
 </html>
